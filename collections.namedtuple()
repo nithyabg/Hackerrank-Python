@@ -1,0 +1,13 @@
+n=int(input())
+a=n
+inp=list(map(str,input().split()))
+for i in range(len(inp)):
+    if(inp[i]=='MARKS'):
+        x=i
+        break
+sum=0
+while n!=0:
+    inp=list(map(str,input().split()))
+    sum+=int(inp[x])
+    n-=1
+print(sum/a)
