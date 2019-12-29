@@ -1,0 +1,12 @@
+n=int(input())
+d={}
+while(n>0):
+    a=input()
+    if a in d:
+        d[a]+=1
+    else:
+        d[a]=1
+    n-=1
+print(len(d))
+for i in d:
+    print(d[i],end=" ")
